@@ -7,6 +7,7 @@
     "migrate:dev": "DATABASE_URL=$DIRECT_DATABASE_URL npx prisma migrate dev",
     "migrate:deploy": "DATABASE_URL=$DIRECT_DATABASE_URL npx prisma migrate deploy",
     "generate": "npx prisma generate",
+     "seed": "DATABASE_URL=$DIRECT_DATABASE_URL npx prisma db seed",
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint"
@@ -33,5 +34,8 @@
     "tailwindcss": "^4",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   }
 }
