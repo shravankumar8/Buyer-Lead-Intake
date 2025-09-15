@@ -12,7 +12,11 @@ yarn dev
 pnpm dev
 # or
 bun dev
+
 ```
+
+
+The db we used is Postgres from supabase and 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
